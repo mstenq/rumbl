@@ -13,7 +13,11 @@ config :logger, level: :warn
 config :rumbl, Rumbl.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "rush2112",
   database: "rumbl_test",
   hostname: "localhost",
+  template: "template0",
   pool: Ecto.Adapters.SQL.Sandbox
+  
+config :comeonin, :bcrypt_log_rounds, 4
+config :comeonin, :pbkdf2_rounds, 1
